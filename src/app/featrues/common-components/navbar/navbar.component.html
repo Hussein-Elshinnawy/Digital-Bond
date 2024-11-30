@@ -1,0 +1,46 @@
+<nav   #navbar class="navbar navbar-expand-md navbar-dark fixed" id="navbar">
+  <div class="container-fluid mx-5 my-1">
+    <a class="navbar-brand "  routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }"><img id="digital-bond-logo"
+        src="https://digitalbondmena.com/assets/images/logo/logo.webp" alt="Digital-Bond"></a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+      aria-controls="mainNavbar" aria-expanded="false" >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNavbar">
+
+      <ul class="navbar-nav me-auto mb-2 mb-md-0">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="" fragment="about-us">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="" fragment="reviews"> Reviews</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="" fragment="contact-us">Contact-Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/services" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }" aria-disabled="true">Services</a>
+        </li>
+       </ul>
+
+      <div class="d-flex justify-content-around" id="socail-media">
+
+        <a href="https://www.instagram.com/digitalbondmena/" target="_blank"><fa-icon [icon]="instagram"></fa-icon></a>
+
+        <a href="https://www.instagram.com/digitalbondmena/" target="_blank"><fa-icon [icon]="facebook"></fa-icon></a>
+
+        <a href="https://www.instagram.com/digitalbondmena/" target="_blank"><fa-icon [icon]="linkedin"></fa-icon></a>
+
+        <a href="https://wa.me/01126692339" target="_blank"> <fa-icon [icon]="whatsapp"></fa-icon></a>
+
+        <a href="https://www.instagram.com/digitalbondmena/" target="_blank"><fa-icon [icon]="tiktok"></fa-icon></a>
+
+      </div>
+    </div>
+  </div>
+</nav>

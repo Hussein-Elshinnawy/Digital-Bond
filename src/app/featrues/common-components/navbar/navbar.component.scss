@@ -1,0 +1,34 @@
+#digital-bond-logo {
+  max-width: 70px;
+}
+
+#navbar {
+  background-image: url('https://digitalbondmena.com/NAVBAR.a937e89a72d2e7b2.gif');
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+fa-icon {
+  color: white;
+  font-size: 1.5rem;
+}
+
+#socail-media {
+  width: 300px;
+}
+
+.navbar-nav .nav-item {
+  text-transform: uppercase;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+.active-link {
+  font-weight: bold;
+  color: var(--primary-color) !important;
+  text-decoration: none;
+}
+

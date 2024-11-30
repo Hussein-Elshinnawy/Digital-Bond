@@ -1,0 +1,57 @@
+<div class="container">
+  <h3 class="primary-title">Contact Us</h3>
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+    <div class="col-12 py-1">
+      <label for="name" class="form-label">Name</label>
+      <input
+        type="text"
+        class="form-control"
+        id="name"
+        placeholder="Your Name"
+        formControlName="name"
+        required
+      />
+      <div *ngIf="form.get('name')?.invalid && form.get('name')?.touched" class="form-text text-danger">
+        <span *ngIf="form.get('name')?.hasError('required')">Required</span>
+        <span *ngIf="form.get('name')?.hasError('minlength')">Name must be at least 3 characters</span>
+      </div>
+    </div>
+
+    <div class="col-12 py-1">
+      <label for="subject" class="form-label">Subject</label>
+      <input
+        type="text"
+        class="form-control"
+        id="subject"
+        placeholder="Subject of your message"
+        formControlName="subject"
+        required
+      />
+      <div *ngIf="form.get('subject')?.invalid && form.get('subject')?.touched" class="form-text text-danger">
+        <span *ngIf="form.get('subject')?.hasError('required')">Required</span>
+        <span *ngIf="form.get('subject')?.hasError('minlength')">Subject must be at least 3 characters</span>
+      </div>
+    </div>
+
+    <div class="col-12 py-1">
+      <label for="message" class="form-label">Message</label>
+      <textarea
+        class="form-control"
+        id="message"
+        rows="4"
+        placeholder="Write your message here..."
+        formControlName="message"
+        required
+      ></textarea>
+      <div *ngIf="form.get('message')?.invalid && form.get('message')?.touched" class="form-text text-danger">
+        <span *ngIf="form.get('message')?.hasError('required')">Required</span>
+        <span *ngIf="form.get('message')?.hasError('minlength')">Message must be at least 10 characters</span>
+      </div>
+    </div>
+
+    <div class="col-12 my-3">
+      <button type="submit" [disabled]="form.invalid" class="btn btn-primary">Submit</button>
+    </div>
+  </form>
+</div>

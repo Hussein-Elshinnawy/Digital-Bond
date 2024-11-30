@@ -1,0 +1,33 @@
+.form-label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.invalid-feedback {
+  color: red;
+  font-size: 0.875rem;
+  display: none;
+}
+
+button{
+  margin-top: 20px;
+  width: 200px;
+  background-color: var(--primary-color) !important;
+}
+
+@media (max-width: 770px) {
+  .form-control {
+    padding: 8px;
+  }
+
+  button{
+    width: 100%;
+    padding: 10px;
+  }
+}

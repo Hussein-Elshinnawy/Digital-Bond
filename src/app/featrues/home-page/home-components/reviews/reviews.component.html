@@ -1,0 +1,25 @@
+<div class="container">
+  <h1 class="primary-title">Reviews</h1>
+  <div *ngIf="reviews.length">
+    <div class="review-navigation">
+      <button class="nav-button" (click)="goToPrevious()">
+        <span class="nav-icon">&#60;</span>
+      </button>
+      <div class="review-content">
+        <div >
+          <h1 class="secondary-title">{{ reviews[currentIndex].name }}</h1>
+          <h3>{{ reviews[currentIndex].email }}</h3>
+          <p class="primary-body-text">{{ reviews[currentIndex].body }}</p>
+          <div>
+            <span *ngFor="let star of [].constructor(reviews[currentIndex].rating); let i = index">
+              ⭐
+            </span>
+          </div>
+        </div>
+      </div>
+      <button class="nav-button" (click)="goToNext()">
+        <span class="nav-icon">&#62;</span>
+      </button>
+    </div>
+  </div>
+</div>
