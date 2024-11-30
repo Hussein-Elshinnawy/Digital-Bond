@@ -1,27 +1,66 @@
-# DigitalBond
+# Digital Bond 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.1.
+## Project Description
+This project involves creating a **modern, responsive, and well-designed homepage** for the official website of **Digital Bond**. The homepage highlights the company's key services and ensures a smooth user experience with interactive elements, animations, and efficient routing.
 
-## Development server
+The redesigned homepage incorporates several improvements over the original website, including an **animated sticky navbar**, optimized **single-page navigation** (to avoid full-page reloads).
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+---
 
-## Code scaffolding
+## Features
+1. **Navbar:**
+   - Sticky, animated navbar that adjusts dynamically when scrolling.
+   
+2. **Hero Section:**
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+3. **Services Section:**
+    - Social Media
+    - Web Development
+    - Mobile Apps
+    - SEO Optimization
+    - Influencers Marketing
+    - SMS Campaigns
+    - Media Production
 
-## Build
+4. **About Us:**
+   - Brief description of Digital Bond's vision and mission.
+   - Use of subtle animations for section elements.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+5. **Reviews Section:**
 
-## Running unit tests
+6. **Contact Us:**
+   - Validations for all input fields.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+7. **Footer:**
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+---
 
-## Further help
+## Task Requirements
+1. **Create a homepage** with the following sections:
+   - Navbar
+   - Hero Section
+   - About Us
+   - Reviews
+   - Contact Us
+   - Footer
+   - Services Section
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+2. **Add Motion and Effects:**
+   - Include animations for section transitions.
+   - Navbar sticky particaily hiddin and interactions.
+
+3. **Responsive Design:**
+   - Ensure the homepage is compatible with all devices (mobile, tablet, and desktop).
+
+5. **Efficient Validation:**
+   - Validate all form inputs in the "Contact Us" section.
+
+---
+
+## Technologies Used
+- **Frontend Framework:** Angular 18
+- **Styling:** SCSS
+- **Validation:** Angular Reactive Forms
+- **Routing:** Angular Router with fragment-based scrolling
+
